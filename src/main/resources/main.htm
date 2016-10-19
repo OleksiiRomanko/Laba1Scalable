@@ -1,0 +1,2292 @@
+
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta content='width=1024' name='viewport'>
+<title>Разработка / Публикации / Хабрахабр</title>
+
+
+  <meta property="og:image" content="https://habrahabr.ru/i/habralogo.jpg" />
+<link rel="image_src" href="https://habrahabr.ru/i/habralogo.jpg" />
+
+
+<meta name='yandex-verification' content='71593b225aeafc4e' />
+<meta name='referrer' content='unsafe-url' />
+<meta name="pocket-site-verification" content="ed24b2b9721edf0a282c5b4a3232c4" />
+
+
+<style type="text/css">
+  @font-face{font-family:'Fira Sans';font-style:normal;font-weight:400;src:url(/fonts/0/FiraSans/hg-FiraSans-Regular.eot);src:local("Fira Sans"),local("FiraSans-Regular"),url(/fonts/0/FiraSans/hg-FiraSans-Regular.eot?#iefix) format("embedded-opentype"),url(/fonts/0/FiraSans/hg-FiraSans-Regular.woff2) format("woff2"),url(/fonts/0/FiraSans/hg-FiraSans-Regular.woff) format("woff"),url(/fonts/0/FiraSans/hg-FiraSans-Regular.ttf) format("truetype")}@font-face{font-family:'Fira Sans';font-style:normal;font-weight:500;src:url(/fonts/0/FiraSans/hg-FiraSans-Medium.eot);src:local("Fira Sans Medium"),local("FiraSans-Medium"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.eot?#iefix) format("embedded-opentype"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.woff2) format("woff2"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.woff) format("woff"),url(/fonts/0/FiraSans/hg-FiraSans-Medium.ttf) format("truetype")}
+</style>
+
+  <link href="https://habracdn.net/habr/styles/1476358189/_parts/posts.css" rel="stylesheet" media="all" />
+  <link href="https://habracdn.net/habr/styles/1476358189/forms.css" rel="stylesheet" media="all" />
+  <link href="https://habracdn.net/habr/styles/1476358189/hubs/all.css" rel="stylesheet" media="all" />
+
+<link href="https://habracdn.net/habr/styles/1476358189/_build/global_main.css" rel="stylesheet" media="all" />
+
+
+
+
+<meta name='yandex-verification' content='67d46b975fa41645' />
+
+<meta content='Хабрахабр' name='apple-mobile-web-app-title'>
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16" />
+<meta name="application-name" content="Хабрахабр"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+
+  <link title="Разработка / Публикации" type="application/rss+xml" rel="alternate" href="https://habrahabr.ru/rss/flows/develop/"/>
+
+<script>
+  (function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+  function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+  function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+
+  (function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function q(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+  this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+  function w(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font:"+b+";"}function x(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;x(a)&&null!==a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);x(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,C=null,D=null;function H(){if(null===C){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}C=""!==a.style.font}return C}function I(a,b){return[a.style,a.weight,H()?a.stretch:"","100px",b].join(" ")}
+  A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",y=b||3E3,E=(new Date).getTime();return new Promise(function(a,b){null===D&&(D=!!document.fonts);if(D){var J=new Promise(function(a,b){function e(){(new Date).getTime()-E>=y?b():document.fonts.load(I(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),K=new Promise(function(a,c){setTimeout(c,y)});Promise.race([K,J]).then(function(){a(c)},function(){b(c)})}else m(function(){function r(){var b;if(b=
+  -1!=f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==t&&g==t&&h==t||f==u&&g==u&&h==u||f==v&&g==v&&h==v)),b=!b;b&&(null!==d.parentNode&&d.parentNode.removeChild(d),clearTimeout(G),a(c))}function F(){if((new Date).getTime()-E>=y)null!==d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||
+  void 0===a)f=e.a.offsetWidth,g=n.a.offsetWidth,h=p.a.offsetWidth,r();G=setTimeout(F,50)}}var e=new q(k),n=new q(k),p=new q(k),f=-1,g=-1,h=-1,t=-1,u=-1,v=-1,d=document.createElement("div"),G=0;d.dir="ltr";w(e,I(c,"sans-serif"));w(n,I(c,"serif"));w(p,I(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);t=e.a.offsetWidth;u=n.a.offsetWidth;v=p.a.offsetWidth;F();z(e,function(a){f=a;r()});w(e,I(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;r()});
+  w(n,I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;r()});w(p,I(c,'"'+c.family+'",monospace'))})})};"undefined"!==typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+
+  (function( w ){
+    if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){ return; }
+
+    var html = document.documentElement;
+    var FS400 = new w.FontFaceObserver("Fira Sans", { weight: 400 });
+    var FS500 = new w.FontFaceObserver("Fira Sans", { weight: 500 });
+
+    Promise.all([ FS400.check, FS500.check ]).then(function() {
+      html.classList.add('fonts-loaded');
+      sessionStorage.fontsLoaded = true;
+      console.log('fonts-loaded');
+    }).catch(function () {
+      sessionStorage.fontsLoaded = false;
+      console.log('fonts-unloaded');
+    });
+
+    if (sessionStorage.fontsLoaded) {
+      html.classList.add('fonts-loaded');
+    }
+  }(this));
+</script>
+<script src="https://habracdn.net/habr/javascripts/1476358189/libs/jquery-1.8.3.min.js"></script>
+  
+  <script >var N = 5; var ar_duo1 = Math.floor(Math.random()*N+1);</script>
+  <script type="text/javascript" src="https://habracdn.net/habr/javascripts/1476358189/libs/adriver.core.2.js"></script>
+
+<script src="https://habracdn.net/habr/javascripts/1476358189/_parts/advertising.js"></script>
+<script type="text/javascript">
+  var user_type = 'guest';
+  var adb1 = 'no';
+  var page_type = 'other';
+
+  if (typeof adriver == 'undefined'){ adb1 = 'yes'; }
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-726094-1',  'auto');
+      ga('create', 'UA-726094-24', 'auto', {'name': 'HGM'});
+
+
+
+  (function() {
+    var win = window;
+    var removeUtms = function(){
+      var location = win.location;
+      if (location.search.indexOf('utm_') != -1 && history.replaceState) {
+        history.replaceState({}, '', window.location.toString().replace(/(\&|\?)utm([_a-z0-9=]+)/g, ""));
+      }
+    };
+    ga('send', 'pageview', { 'hitCallback': removeUtms });
+  })();
+
+  ga('set', 'dimension4', adb1);
+  ga('set', 'dimension5', page_type);
+  ga('require', 'displayfeatures');
+  ga('set', 'dimension1', user_type); // user type - guest/readonly/habrauser
+  ga('HGM.set', 'dimension1', user_type);
+  ga('HGM.set', 'dimension2', "habrahabr");
+  ga('HGM.send', 'pageview');
+</script>
+<script>
+  var adcm_config ={
+    id:1034,
+    platformId: 34,
+    
+    
+    init: function () {
+      window.adcm.call();
+    }
+  };
+</script>
+<script src="https://tag.digitaltarget.ru/adcm.js" async></script>
+  </head>
+
+  <body class="nl">
+    <div class="layout">
+      <div id="TMpanel">
+  <div class="container">
+    <div class="bmenu">
+      <a href="https://tmfeed.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">TM Feed</a>
+      <a href="https://habrahabr.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo" class="current">Хабрахабр</a>
+      <a href="https://geektimes.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">Geektimes</a>
+      <a href="https://toster.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">Тостер</a>
+      <a href="https://moikrug.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">Мой круг</a>
+      <a href="https://freelansim.ru?utm_source=tm_habrahabr&utm_medium=tm_top_panel&utm_campaign=tm_promo">Фрилансим</a>
+    </div>
+      <div class="bmenu_inner" style="display:inline-block!important;visibility:visible!important;">
+        <span class="bmenu__label">Спецпроекты:</span>
+        <span class="bmenu slink"></span>
+        <span id="adriver_banner_465568687"></span>
+      </div>
+  </div>
+</div>
+
+      <div class="layout__navbar">
+        <div class="main-navbar">
+  <div class="main-navbar__section main-navbar__section_left" data-style="display: flex;">
+    <a href="/" class="logo">
+      <svg class="icon-svg icon-svg_logo-habrahabr" width="100%" height="100%" viewBox="0 0 181 32" aria-hidden="true" aria-labelledby="title" version="1.1" role="img"><title>Хабрахабр</title><path d="M24.736 1.044h-8.582L12.53 6.168 8.91 1.044H.325l7.898 11.194L0 23.888h8.583l3.948-5.58 3.95 5.58h8.583l-8.256-11.65zM34.033 7.082c-3.133 0-6.036.88-8.256 2.61l2.87 3.428c1.502-.98 3.754-1.535 5.255-1.535 1.372 0 2.577.36 2.577 2.09v.49c-6.56 0-11.096 1.142-11.096 5.58 0 3.133 2.252 4.633 5.71 4.633 1.665 0 3.885-.913 5.386-2.61v2.12h6.07V12.696c0-4.765-4.73-5.613-8.516-5.613zm2.448 11.455c-.912 1.21-1.89 1.73-2.773 1.73-1.24 0-1.6-.654-1.6-1.274 0-1.533 1.96-2.087 4.373-2.087v1.63zM53.937 8.746c-1.47 0-3.818.62-4.863 1.894.294-2.448 2.023-3.655 5.32-4.308 1.534-.294 5.155-.98 7.18-1.402L60.463 0c-2.546.62-4.864 1.143-7.508 1.633-6.657 1.24-8.125 5.156-8.125 12.14 0 6.658 2.743 10.608 8.813 10.608 5.188 0 8.615-3.426 8.615-8.517 0-3.983-2.87-7.116-8.32-7.116zm-.39 10.28c-1.437 0-2.644-1.24-2.644-2.675s1.207-2.675 2.643-2.675c1.436 0 2.643 1.24 2.643 2.676s-1.208 2.677-2.644 2.677zM74.82 7.082c-1.664 0-3.46 1.044-4.21 2.61v-2.12h-6.07v22.974h6.07v-8.778c.752 1.567 2.546 2.61 4.21 2.61 4.765 0 7.343-3.883 7.343-8.648 0-4.764-2.577-8.647-7.343-8.647zm-1.957 11.552c-.88 0-1.697-.423-2.252-1.108v-3.622c.555-.653 1.373-1.076 2.253-1.076 1.567 0 2.905 1.273 2.905 2.905 0 1.564-1.338 2.902-2.905 2.902zM92.767 7.082c-3.133 0-6.038.88-8.256 2.61l2.872 3.428c1.5-.98 3.753-1.535 5.254-1.535 1.372 0 2.58.36 2.58 2.09v.49c-6.56 0-11.098 1.142-11.098 5.58 0 3.133 2.252 4.633 5.71 4.633 1.665 0 3.885-.913 5.387-2.61v2.12h6.068V12.696c0-4.765-4.732-5.613-8.516-5.613zm2.448 11.455c-.915 1.21-1.894 1.73-2.775 1.73-1.24 0-1.6-.654-1.6-1.274 0-1.533 1.96-2.087 4.375-2.087v1.63zM122.723 7.57h-7.703l-2.055 4.276-2.057-4.275h-7.7l5.58 7.997-5.874 8.32h7.702l2.35-4.306 2.35 4.308h7.702l-6.528-8.32zM132.967 7.082c-3.133 0-6.038.88-8.257 2.61l2.873 3.428c1.503-.98 3.753-1.535 5.255-1.535 1.37 0 2.58.36 2.58 2.09v.49c-6.56 0-11.098 1.142-11.098 5.58 0 3.133 2.252 4.633 5.71 4.633 1.665 0 3.885-.913 5.386-2.61v2.12h6.068V12.696c0-4.765-4.732-5.613-8.516-5.613zm2.448 11.455c-.913 1.21-1.894 1.73-2.775 1.73-1.24 0-1.6-.654-1.6-1.274 0-1.533 1.96-2.087 4.375-2.087v1.63zM152.87 8.746c-1.468 0-3.817.62-4.862 1.894.294-2.448 2.023-3.655 5.32-4.308 1.536-.294 5.157-.98 7.18-1.402L159.397 0c-2.546.62-4.864 1.143-7.506 1.633-6.657 1.24-8.125 5.156-8.125 12.14 0 6.658 2.742 10.608 8.81 10.608 5.19 0 8.617-3.426 8.617-8.517 0-3.983-2.873-7.116-8.323-7.116zm-.39 10.28c-1.437 0-2.643-1.24-2.643-2.675s1.206-2.675 2.643-2.675c1.436 0 2.643 1.24 2.643 2.676 0 1.437-1.207 2.677-2.643 2.677zM173.754 7.082c-1.664 0-3.46 1.044-4.21 2.61v-2.12h-6.07v22.974h6.07v-8.778c.75 1.567 2.546 2.61 4.21 2.61 4.764 0 7.343-3.883 7.343-8.648 0-4.764-2.58-8.647-7.343-8.647zm-1.958 11.552c-.88 0-1.697-.423-2.252-1.108v-3.622c.554-.653 1.37-1.076 2.252-1.076 1.565 0 2.905 1.273 2.905 2.905 0 1.564-1.34 2.902-2.904 2.902z"/></svg>
+    </a>
+    <ul class="nav-links" id="navbar-links">
+  <li class="nav-links__item">
+    <a href="/" class="nav-links__item-link nav-links__item-link_current">Публикации</a>
+  </li>
+  <li class="nav-links__item">
+    <a href="/hubs/" class="nav-links__item-link ">Хабы</a>
+  </li>
+  <li class="nav-links__item">
+    <a href="/companies/" class="nav-links__item-link ">Компании</a>
+  </li>
+  <li class="nav-links__item">
+    <a href="/users/" class="nav-links__item-link ">Пользователи</a>
+  </li>
+  <li class="nav-links__item">
+    <a href="/sandbox/" class="nav-links__item-link ">Песочница</a>
+  </li>
+</ul>
+    <form action="/search/#h" method="get" class="search-form" id="search-form">
+  <!-- Я вернулся братиш, после стольких лет разлуки:) -->
+  <button type="button" class="btn btn_navbar_search" id="search-form-btn">
+    <svg class="icon-svg icon-svg_navbar-search" width="100%" height="100%" viewBox="0 0 32 32" aria-hidden="true" aria-labelledby="title" version="1.1" role="img"><title>Поиск</title><path d="M21.416 13.21c0 4.6-3.65 8.34-8.14 8.34S5.11 17.81 5.11 13.21c0-4.632 3.65-8.373 8.167-8.373 4.488 0 8.14 3.772 8.14 8.372zm1.945 7.083c1.407-2.055 2.155-4.57 2.155-7.084C25.515 6.277 20.04.665 13.277.665S1.04 6.278 1.04 13.21c0 6.93 5.475 12.542 12.237 12.542 2.454 0 4.907-.797 6.942-2.208l7.6 7.79 3.14-3.22-7.6-7.82z"/></svg>
+  </button>
+  <label class="search-form__field-wrapper">
+    <input type="text" name="q" class="search-form__field" id="search-form-field" placeholder="Поиск" tabindex="-1"/>
+    <button type="button" class="btn btn_search-clear" id="search-form-clear">
+      <svg class="icon-svg icon-svg_navbar-close-search" width="12" height="12" viewBox="0 0 31 32" aria-hidden="true" aria-labelledby="title" version="1.1" role="img"><title>search cancel</title><path d="M26.67 0L15.217 11.448 3.77 0 0 3.77l11.447 11.45L0 26.666l3.77 3.77L15.218 18.99l11.45 11.448 3.772-3.77-11.448-11.45L30.44 3.772z"/></svg>
+
+    </button>
+  </label>
+</form>
+  </div>
+
+  <div class="main-navbar__section main-navbar__section_right" data-style="display: flex;">
+      <a href="https://habrahabr.ru/auth/login/" id="login" class="btn btn_x-large btn_navbar_login">Войти</a>
+      <a href="https://habrahabr.ru/auth/register/" class="btn btn_x-large btn_navbar_registration">Регистрация</a>
+
+
+  </div>
+</div>
+      </div>
+      <div class="layout__base">
+        
+
+          <div class="page-header page-header_inline page-header_dropdown">
+  <div class="dropdown dropdown_flows">
+    
+        <button type="button" class="btn btn_large btn_flow-toggle" data-toggle="dropdown">
+          Разработка
+          <svg class="icon-svg icon-svg_chevron" width="100%" height="100%" viewBox="0 0 48 32" aria-hidden="true" aria-labelledby="title" version="1.1" role="img"><title>arrrow popup</title><path d="M26.964 30.424C26.09 31.474 24.942 32 23.797 32c-1.148 0-2.295-.526-3.167-1.575 0 0-17.24-19.22-18.88-21.185C.112 7.273 0 3.736 1.75 1.637c1.748-2.098 4.19-2.264 6.336 0L23.8 19.27 39.51 1.636c2.147-2.264 4.587-2.098 6.336 0 1.75 2.1 1.64 5.636 0 7.603-1.64 1.966-18.88 21.185-18.88 21.185z"/></svg>
+        </button>
+
+      <div class="dropdown-container dropdown-container_flows">
+        <ul class="n-dropdown-menu n-dropdown-menu_flows">
+            <li class="n-dropdown-menu__item">
+              <a href="https://habrahabr.ru/all/" class="n-dropdown-menu__item-link n-dropdown-menu__item-link_flow">Все потоки</a>
+            </li>
+            <li class="n-dropdown-menu__item">
+              <a href="https://habrahabr.ru/flows/admin/" class="n-dropdown-menu__item-link n-dropdown-menu__item-link_flow">Администрирование</a>
+            </li>
+            <li class="n-dropdown-menu__item">
+              <a href="https://habrahabr.ru/flows/design/" class="n-dropdown-menu__item-link n-dropdown-menu__item-link_flow">Дизайн</a>
+            </li>
+            <li class="n-dropdown-menu__item">
+              <a href="https://habrahabr.ru/flows/management/" class="n-dropdown-menu__item-link n-dropdown-menu__item-link_flow">Управление</a>
+            </li>
+            <li class="n-dropdown-menu__item">
+              <a href="https://habrahabr.ru/flows/marketing/" class="n-dropdown-menu__item-link n-dropdown-menu__item-link_flow">Маркетинг</a>
+            </li>
+            <li class="n-dropdown-menu__item">
+              <a href="https://habrahabr.ru/flows/misc/" class="n-dropdown-menu__item-link n-dropdown-menu__item-link_flow">Разное</a>
+            </li>
+        </ul>
+      </div>
+  </div>
+</div>
+
+  <div class="column-wrapper js-sticky-wrapper">
+    <div class="content_left js-content_left">
+        <div class="tabs">
+    <ul class="tabs-menu tabs-menu_habrahabr">
+        <li class="tabs-menu__item tabs-menu__item_inline">
+          <a href="https://habrahabr.ru/flows/develop/" class="tab-item tab-item_current"  >
+            <span class="tab-item__value">
+              Публикации&nbsp;
+              <strong class="counter"></strong>
+              
+            </span>
+          </a>
+        </li>
+        <li class="tabs-menu__item tabs-menu__item_inline">
+          <a href="https://habrahabr.ru/flows/develop/hubs/" class="tab-item "  >
+            <span class="tab-item__value">
+              Хабы&nbsp;
+              <strong class="counter"></strong>
+              
+            </span>
+          </a>
+        </li>
+        <li class="tabs-menu__item tabs-menu__item_inline">
+          <a href="https://habrahabr.ru/flows/develop/authors/" class="tab-item "  >
+            <span class="tab-item__value">
+              Авторы&nbsp;
+              <strong class="counter"></strong>
+              
+            </span>
+          </a>
+        </li>
+    </ul>
+
+      <ul class="menu menu_sub ">
+          <li class="menu__item menu__item_inline menu__item_sub">
+              <span class="menu__item-link menu__item-link_current" >
+              Интересные
+              
+              
+            </span>
+          </li>
+          <li class="menu__item menu__item_inline menu__item_sub">
+              <a href="https://habrahabr.ru/flows/develop/all/" class="menu__item-link" >
+              Все подряд
+              
+              
+            </a>
+          </li>
+          <li class="menu__item menu__item_inline menu__item_sub">
+              <a href="https://habrahabr.ru/flows/develop/best/" class="menu__item-link" >
+              Лучшие
+              
+              
+            </a>
+          </li>
+          <li class="menu__item menu__item_inline menu__item_sub">
+              <a href="https://habrahabr.ru/flows/develop/sandbox/" class="menu__item-link" >
+              Песочница
+              
+              
+            </a>
+          </li>
+      </ul>
+  </div>
+
+
+      <div class="posts_list">
+        <div class="posts shortcuts_items">
+          
+            
+    <div class="post post_teaser shortcuts_item" id="post_312746">
+  <div class="post__header">
+      <span class="post__time_published">сегодня в 12:23</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/company/railsclub/blog/312746/" class="post__title_link">RailsClub 2016: интервью со Steve Klabnik</a>
+      
+
+
+
+
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/programming/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Программирование'); }">Программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/rust/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Rust'); }">Rust</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/ror/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Ruby on Rails'); }">Ruby on Rails</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/ruby/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Ruby'); }">Ruby</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/company/railsclub/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Блог компании «RailsClub»'); }">Блог компании «RailsClub»</a>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format"><b><a href="http://railsclub.ru/">RailsClub 2016</a></b> 22 октября, билетов осталось совсем мало. Не откладывайте регистрацию, если собираетесь идти! Мы публикуем разговоры с нашими спикерами, и сегодня это <b><a href="http://www.steveklabnik.com/">Steve Klabnik</a></b> — член Rust core team, активный open source контрибьютер и очень интересный собеседник!<br/>
+Автор книг “The Rust Programming Language”, “Rails 4 in Action” и “Designing Hypermedia APIs”. Живет в Бруклине, сам о себе пишет, что «проводит слишком много времени на GitHub».<br/>
+<br/>
+Стив уже выступал на RailsClub в 2012 году. И мы также публиковали интервью с ним (любопытным можно посмотреть <a href="https://habrahabr.ru/company/railsclub/blog/150734/">тут</a>). С тех пор Стив плотно занялся Rust, сделал много интересных штук и мы поняли, что нужно обязательно пригласить его снова :)<br/>
+<br/>
+Думаю, эта наша публикация будет интересна не только рубистам, но и поклонникам Rust, которых в России становится все больше. На последнем митапе к нам подошли ребята из русскоязычного Rust-сообщества <b><a href="https://rustycrate.ru/">rustycrate.ru </a></b>. Приглашают всех, кто после RailsClub заинтересуется Rust, не стесняться присоединяться и задавать вопросы.<br/>
+ <br/>
+<img src="https://habrastorage.org/getpro/habr/post_images/b24/165/832/b241658327c58d0f6f96384cecaefbaa.jpg" alt="image" align="left"/><br/>
+Доклад на нашей конференции — <b>Exploring Ruby through Rust</b>.<br/>
+Ruby написан на C. Многие классы, которые мы знаем и любим, написаны на Ruby, некоторые нет. Изучая, как работает MRI мы можем узнать о Ruby много интересного. В докладе Стив покажет веселый хак: перепишет куски Ruby-интерпретатора на Rust. В процессе много узнаем о внутреннем устройстве Ruby и о том, как начать хакать код на С.<br/>
+<br/>
+Под катом приводим наши вопросы, ответы Стива в оригинале и нашем вольном переводе:<br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/company/railsclub/blog/312746/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312746">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">904</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">4</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/elena_voronina/" >
+                    <img src="//habrastorage.org/getpro/habr/avatars/8a3/c58/d2e/8a3c58d2e85b28990edf799a3791be88.jpg" class="post-author__pic"/>@elena_voronina
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+
+                  <a href="https://habrahabr.ru/company/railsclub/blog/312746/#comments" class="post-comments__link" title="Комментировать">
+                    <span class="post-comments_all">Комментировать</span>
+                  </a>
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312774">
+  <div class="post__header">
+      <span class="post__time_published">сегодня в 11:57</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/post/312774/" class="post__title_link">Зачем нужен алгоритм Хо-Кашьяпа?</a>
+      
+
+
+
+<a href="/sandbox/" class="flag flag_sandbox" title="Перейти в песочницу">из песочницы</a>
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/machine_learning/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Машинное обучение'); }">Машинное обучение</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/algorithms/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Алгоритмы'); }">Алгоритмы</a><span class="profiled_hub" title="Профильный хаб">*</span>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format">Недавно на Хабре появилась публикация про <a href="https://habrahabr.ru/post/312600/">алгоритм Хо-Кашьяпа</a> (Ho-Kashyap procedure, он же — алгоритм НСКО, наименьшей среднеквадратичной ошибки). Мне она показалась не очень понятной и я решил разобраться в теме сам. Выяснилось, что в русскоязычном интернете тема не очень хорошо разобрана, поэтому я решил оформить статью по итогам поисков.<br/>
+<br/>
+Несмотря на бум нейросетей в машинном обучении, алгоритмы линейной классификации остаются гораздо более простыми в использовании и интерпретации. Но при этом иногда вовсе не хочется пользоваться сколько-нибудь продвинутыми методами, вроде <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BE%D0%BF%D0%BE%D1%80%D0%BD%D1%8B%D1%85_%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2">метода опорных векторов</a> или <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">логистической регрессии</a> и возникает искушение загнать все данные в одну большую <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">линейную МНК-регрессию</a>, тем более её прекрасно умеет строить даже MS Excel.<br/>
+<br/>
+Проблема такого подхода в том, что даже если входные данные линейно разделимы, то получившийся классификатор может их не разделять. Например, для набора точек <img src="https://tex.s2cms.ru/svg/%20X%20%3D%20%5B(6%2C%209)%2C%20(5%2C%207)%2C%20(5%2C%209)%2C%20(10%2C%201)%5D%20" alt="X = [(6, 9), (5, 7), (5, 9), (10, 1)]"/>, <img src="https://tex.s2cms.ru/svg/%20y%20%3D%20%5B1%2C%201%2C%20-1%2C%20-1%5D%20" alt="y = [1, 1, -1, -1]"/> получим разделяющую прямую <img src="https://tex.s2cms.ru/svg/(0.15x_1%20-%200.43x_2%20%2B%203.21)%20%3D%200%20" alt="(0.15x_1 - 0.43x_2 + 3.21) = 0"/> (пример позаимствован из (1)):<br/>
+<br/>
+<div style="text-align:center;"><img  src="https://habrastorage.org/files/6f5/a40/b54/6f5a40b543d245898e13e6d5da843da2.png" alt="Latex"/></div><br/>
+<br/>
+Встаёт вопрос — можно ли как-то избавиться от этой особенности поведения?<br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/post/312774/#habracut">Под катом немного теории и код на python</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312774">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">3,7k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">51</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/Drino/" >
+                    <span class="post-author__pic_default user-pic_lilac"></span>@Drino
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+
+                  <a href="https://habrahabr.ru/post/312774/#comments" class="post-comments__link" title="Комментировать">
+                    <span class="post-comments_all">Комментировать</span>
+                  </a>
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312750">
+  <div class="post__header">
+      <span class="post__time_published">сегодня в 11:51</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/company/edison/blog/312750/" class="post__title_link">Дональд Кнут и «Сюрреальные числа»: Я творил шесть дней, а на седьмой отдыхал (40,41,42/97)</a>
+      
+
+<span class="flag flag_translation" title="Перевод">перевод</span>
+
+
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/lib/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Профессиональная литература'); }">Профессиональная литература</a>, 
+          <a href="https://habrahabr.ru/hub/maths/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Математика'); }">Математика</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/zadachki/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Занимательные задачки'); }">Занимательные задачки</a>, 
+          <a href="https://habrahabr.ru/company/edison/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Блог компании Edison'); }">Блог компании Edison</a>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format"><i>«Эксперты по computer science сказали бы, что я допустил самую огромную ошибку, когда взялся за этот проект.»</i><br/>
+<br/>
+<img src="https://habrastorage.org/getpro/habr/post_images/278/4a5/afe/2784a5afe2dd5d2656086b54eafc2ebe.jpg" alt="image"/><br/>
+<br/>
+Это уникальное событие в моей жизни. Оно произошло в ранних 70-ых. Я познакомился с Джоном Конвейем, вероятно с одним из величайших математиков. Я встретил его по пути в университет Калгари в 71-м и мы вместе пообедали. Он набросал на салфетке новую теорию, которая пришла ему в голову, и, на мой взгляд, она была действительно потрясающей. Это чисто математическая теория о новом способе определения чисел. Ее суть в том, что они могут быть не только целыми или дробными, но также бывают бесконечные числа, и квадратный корень из бесконечности, и бесконечность бесконечности, и бесконечность квадратных корней бесконечности и все это имеет смысл. Год спустя я был в отпуске в Норвегии и посреди ночи ко мне пришла мысль «Вау, эта теория так красива, что было бы интересно рассказать историю, написать книгу, в которой герои откроют теорию Конвея. Они найдут её правила на каменной скрижали, расшифруют её и смогут сами доказать все эти вещи о бесконечности и прочем».<br/>
+<br/>
+Смысл в том, чтобы таким способом научить людей проводить исследования, чтобы студенты могли не только изучать то, что сделали другие люди, но и сами открывали что-то новое в математике. И всё это может быть представлено в форме истории, где персонажи выясняют все эти вещи самостоятельно. Поэтому я подумал, что из этого может получиться действительно классная книга, и она может быть использована в качестве дополнения. Я думал о том, что учителя в старших школах могли бы советовать её своим ученикам, чтобы они могли увидеть, как совершаются открытия в математике. <br/>
+<br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/company/edison/blog/312750/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312750">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">4,7k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">35</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/MagisterLudi/" >
+                    <img src="//habrastorage.org/getpro/habr/avatars/919/592/3b9/9195923b968ba674c5e1a0271f3283a4.jpg" class="post-author__pic"/>@MagisterLudi
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+                  <a href="https://habrahabr.ru/company/edison/blog/312750/#comments" class="post-comments__link post-comments__link_all" title="Читать комментарии">1</a>
+
+
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312756">
+  <div class="post__header">
+      <span class="post__time_published">сегодня в 00:56</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/post/312756/" class="post__title_link">Кремлевские девойки</a>
+      
+
+
+
+
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/ios_dev/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Разработка под iOS'); }">Разработка под iOS</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/gamedev/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Разработка игр'); }">Разработка игр</a><span class="profiled_hub" title="Профильный хаб">*</span>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format"><div style="text-align:center;"><img src="https://habrastorage.org/files/7cd/8a4/292/7cd8a4292fb64831bebe4cc57955849a.png" /></div><br/>
+Октябрь? На душе пусто, а в магазине приложений Apple дым стоит коромыслом. Чего тут только нет. Местная ЧК чистит полки и разработчикам приходят письма.<br/>
+<br/>
+<blockquote>Дорогой друг<br/>
+Ваше приложение King Towers устарело и мы удаляем его из нашего магазина</blockquote><br/>
+И так по письму раз в неделю. Приложения, дорогие мне как память о далеком Obj-C, я попытался быстро переписать на Swift. Но и здесь очередное коромысло ждало героя. В дом вошел Xcode 8 с новой супругой Swift 3.0. Из старого птичьего кода ничего более не работало. Сточив две мыши, я смог сократить текст в два раза (я становлюсь программистом?) и освоил птичий язык в третий раз, но новая беда — все перелицованные приложения не запустились. Знаете почему?<br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/post/312756/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312756">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">11,1k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">23</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/PapaBubaDiop/" >
+                    <img src="//habrastorage.org/getpro/habr/avatars/8b2/75e/cc3/8b275ecc32a04fd2ef9b9fbaf4674f8d.png" class="post-author__pic"/>@PapaBubaDiop
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+                  <a href="https://habrahabr.ru/post/312756/#comments" class="post-comments__link post-comments__link_all" title="Читать комментарии">13</a>
+
+
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312706">
+  <div class="post__header">
+      <span class="post__time_published">вчера в 14:17</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/company/railsclub/blog/312706/" class="post__title_link">RailsClub 2016: интервью с Zach Briggs</a>
+      
+
+
+
+
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/ror/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Ruby on Rails'); }">Ruby on Rails</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/ruby/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Ruby'); }">Ruby</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/javascript/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'JavaScript'); }">JavaScript</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/company/railsclub/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Блог компании «RailsClub»'); }">Блог компании «RailsClub»</a>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format">Юхуу! Неделя до конференции <a href="http://railsclub.ru/">RailsClub 2016</a>. Все наши гости (включая Матца, да) совсем скоро прилетят в Москву. А мы готовим 600 пакетов раздатки, 600 ланчбоксов с обедами, несчетное количество чая и кофе, маффинов и пирожков, вовсю репетируем доклады со спикерами.<br/>
+ <br/>
+Еще можно успеть заскочить в последний вагон и поучаствовать в главном Ruby событии года в России.<br/>
+<br/>
+Купить билет и зарезервировать себе местечко в зале можно на <a href="http://railsclub.ru/">Railsclub.ru</a><br/>
+ <br/>
+<img src="https://habrastorage.org/getpro/habr/post_images/18b/9c6/c5e/18b9c6c5efc3039baafb8c842863028b.jpg" alt="image" align="left"/> Сегодня мы хотим показать вам интервью с Zach Briggs, спикером предстоящей конференции.<br/>
+<br/>
+Он из Чикаго, работает в TableXI, выступал с докладами и воркшопами на RailsConf, CodeMash, Barcelona Ruby Conf, KalamazooX и многих других конференциях.<br/>
+ <br/>
+Вот тезисы предстоящего доклада:<br/>
+<br/>
+<b>JavaScript for Rails Devs</b><br/>
+<br/>
+JavaScript на фронтенеде сегодня — это болото баззвородов, плохих абстракций и неоправданно сложных инструментов. К счастью для нас, есть простые техники, которые мы можем использовать, чтобы не сгинуть в этой пучине и построить динамичный и современный интерфейс, который помогает людям решать проблемы.<br/>
+<br/>
+В докладе Зак покажет технику, с помощью которой можно встроить компоненты JavaScript внутрь страниц, которые ренедерятся на сервере, чтобы создать островки интерактивности. Ее можно использовать в уже существующей системе, добавив всего 20KB заархивированного JavaScript и немного здравого смысла.<br/>
+ <br/>
+Мы считаем, что это стоит знать! Под катом ответы Зака на наши вопросы о технологиях и жизни. Как обычно, публикуем ответы в оригинале и нашем вольном переводе.<br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/company/railsclub/blog/312706/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312706">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">1,6k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">3</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/elena_voronina/" >
+                    <img src="//habrastorage.org/getpro/habr/avatars/8a3/c58/d2e/8a3c58d2e85b28990edf799a3791be88.jpg" class="post-author__pic"/>@elena_voronina
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+
+                  <a href="https://habrahabr.ru/company/railsclub/blog/312706/#comments" class="post-comments__link" title="Комментировать">
+                    <span class="post-comments_all">Комментировать</span>
+                  </a>
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+              <div style="margin-bottom: 40px;" class="shortcuts_item">
+                    <div class="html_banner_wrap">
+      <!--  AdRiver code START. Type:AjaxJS Site: habrahabr PZ: 0 BN: 13 -->
+      <div class="html_banner" id="adriver_banner_1109509440">
+        <span class="html_banner_text">Реклама помогает поддерживать и&nbsp;развивать наши сервисы<br/><br/><a href="/adblock/" class="xyz_wrapper_button" target="_blank">Подробнее</a></span>
+      </div>
+      <a href="https://special.habrahabr.ru/advertising/" class="firskill__label">Реклама</a>
+
+      <script type="text/javascript">
+        function loadAdriverBanner(){
+          var keyword = '';
+          var custom = [];
+          custom[7] = ar_duo1;
+
+          if (typeof crtg_content !== 'undefined' && crtg_content) { keyword = crtg_content; }
+           custom[1] = 'f_develop'; 
+
+          if ( typeof(adriver) !== 'undefined'){
+            new adriver("adriver_banner_1109509440", {sid:176776, bt:52, bn:13, custom: custom, keyword: keyword})
+          }
+        }
+      </script>
+    </div>
+
+              </div>
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312724">
+  <div class="post__header">
+      <span class="post__time_published">вчера в 16:35</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/post/312724/" class="post__title_link">Собираем Docker контейнер с http сервером при помощи Gradle</a>
+      
+
+
+
+
+<span class="flag flag_tutorial"  title="Обучающий материал">tutorial</span>
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/build_automation/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Системы сборки'); }">Системы сборки</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/linux_dev/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Разработка под Linux'); }">Разработка под Linux</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/programming/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Программирование'); }">Программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/java/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'JAVA'); }">JAVA</a><span class="profiled_hub" title="Профильный хаб">*</span>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format"><img src="https://habrastorage.org/files/7fc/d0c/e85/7fcd0ce858a84a6e895f99b132f0c5d2.png" alt="image" align="right"/>Привет Хабр!<br/>
+<br/>
+Возникла такая задача: Сделать простой web — сервер с минимальным числом зависимостей. При этом деплоиться он будет в виде docker контейнера. Для реализации самого сервера буду использовать <a href="https://grizzly.java.net/">GrizzlyWebServer</a>. Для сборки Gradle c плагином для docker от Benjamin Muschko (bmuschko).<br/>
+<br/>
+Такой выбор инструментов не случаен, я занимаюсь разработкой для android и мне ближе Java и Gradle чем что то другое. В этой статье хочу детально описать процесс от написания приложения до запуска в docker, возможные проблемы и их решение. <br/>
+<br/>
+И так, начнем: сервер.<br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/post/312724/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312724">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">4,3k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">62</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/new_branch/" >
+                    <span class="post-author__pic_default user-pic_lilac"></span>@new_branch
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+                  <a href="https://habrahabr.ru/post/312724/#comments" class="post-comments__link post-comments__link_all" title="Читать комментарии">3</a>
+
+
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312748">
+  <div class="post__header">
+      <span class="post__time_published">вчера в 20:36</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/post/312748/" class="post__title_link">Готовим многопоточность с core.async</a>
+      
+
+
+
+<a href="/sandbox/" class="flag flag_sandbox" title="Перейти в песочницу">из песочницы</a>
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/funcprog/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Функциональное программирование'); }">Функциональное программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/lisp/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Lisp'); }">Lisp</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/javascript/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'JavaScript'); }">JavaScript</a><span class="profiled_hub" title="Профильный хаб">*</span>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format"><img src="https://habrastorage.org/files/70f/086/a65/70f086a655ac44999ec031b3ec2d15c5.png" alt="image"/><br/>
+<p><br/>
+Всё больше набирает популярность паттерн использования каналов при создании<br/>
+многопоточных приложений. Идея не нова, ее дизайн заложен ещё в далёком 1978 году<br/>
+в виде <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">CSP</a>.Наиболее известная реализация сейчас повсеместно используется в Golang. </p><br/>
+<p>Мы же в статье рассмотрим реализацию CSP в core.async для Clojure, если интересно, добро пожаловать под кат.</p><br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/post/312748/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312748">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">4,5k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">20</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/seryh/" >
+                    <img src="//habrastorage.org/getpro/habr/avatars/97b/d0d/4cc/97bd0d4cca9dd024282af807d8fce91c.jpg" class="post-author__pic"/>@seryh
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+                  <a href="https://habrahabr.ru/post/312748/#comments" class="post-comments__link post-comments__link_all" title="Читать комментарии">8</a>
+
+
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312740">
+  <div class="post__header">
+      <span class="post__time_published">вчера в 16:38</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/post/312740/" class="post__title_link">Логика сознания. Часть 8. Пространственные карты коры мозга</a>
+      
+
+
+
+
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/programming/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Программирование'); }">Программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/parallel_programming/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Параллельное программирование'); }">Параллельное программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/machine_learning/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Машинное обучение'); }">Машинное обучение</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/algorithms/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Алгоритмы'); }">Алгоритмы</a><span class="profiled_hub" title="Профильный хаб">*</span>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format"><div style="text-align:center;"><img src="https://habrastorage.org/getpro/habr/post_images/207/4fb/6ac/2074fb6acc3d9c483b6c055eeb06c73b.jpg"  width="800"/></div><br/>
+Задача настоящего цикла статей — попробовать описать как работает реальный мозг. Поэтому нас волнует не только работоспособность предлагаемых моделей, но и их согласованность с теми фактами, что известны про реальный мозг и реальные нейроны. В этой части пойдет разговор о том, насколько принципы пространственной организации, свойственные предлагаемой модели, соответсвуют тому, что известно про пространственную организацию реальной коры.<br/>
+<br/>
+В свое время Вернон Маунткасл выдвинул гипотезу, что для мозга кортикальная колонка – это основная структурная единица переработки информации. В свете описываемой модели можно конкретизировать функции кортикальных миниколонок, механизмы их работы и принципы взаимодействия.<br/>
+<br/>
+В предлагаемой модели мы исходим из того, что мозг оперирует информацией, которая состоит из дискретных понятий. Каждому понятию соответствует волна с определенным уникальным внутренним узором. Носителями волн, предположительно, являются дендритные сегменты. По узорам, которые создают информационные волны, распространяясь по какой-либо зоне коры, миниколонки этой зоны получает информационное описание происходящего. Одна и та же информация поступает в каждую миниколонку.</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/post/312740/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312740">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">5,3k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">75</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/AlexeyR/" >
+                    <img src="//habrastorage.org/getpro/habr/avatars/5f7/505/ce9/5f7505ce9a529fbc651a7d61c57a1e7b.jpg" class="post-author__pic"/>@AlexeyR
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+                  <a href="https://habrahabr.ru/post/312740/#comments" class="post-comments__link post-comments__link_all" title="Читать комментарии">7</a>
+
+
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312718">
+  <div class="post__header">
+      <span class="post__time_published">вчера в 08:54</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/post/312718/" class="post__title_link">Функциональная безопасность, часть 4 из 4. Процессы управления и оценивания</a>
+      
+
+
+
+
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/industrial_control_system/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Промышленное программирование'); }">Промышленное программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/analysis_design/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Анализ и проектирование систем'); }">Анализ и проектирование систем</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/scada/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'SCADA'); }">SCADA</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/itstandarts/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'IT-стандарты'); }">IT-стандарты</a><span class="profiled_hub" title="Профильный хаб">*</span>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format"><img src="https://habrastorage.org/files/e80/ac3/c23/e80ac3c23c934913b3e9556334090ad2.jpg"/><br/>
+<br/>
+Безопасности на хабре посвящен целый <a href="https://habrahabr.ru/hub/infosecurity/">хаб</a>, и, пожалуй, никто особенно не задумывается, что именно вкладывается в понятие «безопасность», и так все ясно: информационная безопасность (security). Однако, есть еще и другая сторона безопасности, safety, связанная с рисками для здоровья и жизни людей, а также окружающей среды. Поскольку информационные технологии сами по себе опасности не представляют, то обычно говорят о функциональной составляющей, то есть о безопасности, связанной с правильным функционированием компьютерной системы. Если информационная безопасность стала критична с появлением интернета, то функциональная безопасность рассматривалась и до появления цифрового управления, ведь аварии происходили всегда.<br/>
+<br/>
+Данная статья продолжает серию публикаций на тему функциональной безопасности.<br/>
+<br/>
+<a href="https://habrahabr.ru/post/308634/">Часть 1</a> является вводной.<br/>
+В <a href="https://habrahabr.ru/post/309636/">части 2</a> рассмотрена общая структура стандарта <a href="http://standartgost.ru/g/%D0%93%D0%9E%D0%A1%D0%A2_%D0%A0_%D0%9C%D0%AD%D0%9A_61508-1-2012">МЭК 61508 «Функциональная безопасность систем электрических, электронных, программируемых электронных, связанных с безопасностью»</a> (IEC 61508 Functional safety of electrical/electronic/programmable electronic safety-related systems) и используемая в нем терминология.<br/>
+В <a href="https://habrahabr.ru/post/310836/">части 3</a> требования МЭК 61508 разложены «по полочкам» на основе их общей классификации.<br/>
+<br/>
+В данной статье достаточно абстрактные требования к управлению функциональной безопасностью интерпретированы для внедрения в рабочие процессы. Эта информация проверена и отшлифована на практике нескольких проектов по сертификации.<br/>
+Процессная инженерия – скучно это или нет? Именно процессы позволяют масштабировать IT-бизнес. Мне лично приходилось наблюдать, как внедрение процессов в разработку приводило к серьезному профессиональному росту, как исполнителей, так и всей компании. И наоборот, «затыки» и так называемая «нецелесообразность» внедрения хорошо структурированных процессов свидетельствовали о незрелости и других серьезных проблемах.<br/>
+Итак…<br/>
+</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/post/312718/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312718">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">1,7k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">20</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/Vladimir_Sklyar/" >
+                    <img src="//habrastorage.org/getpro/habr/avatars/984/3f3/426/9843f3426f3c39096f97bdefbd40991f.jpg" class="post-author__pic"/>@Vladimir_Sklyar
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+
+                  <a href="https://habrahabr.ru/post/312718/#comments" class="post-comments__link" title="Комментировать">
+                    <span class="post-comments_all">Комментировать</span>
+                  </a>
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+              <div style="margin-bottom: 40px;" class="shortcuts_item">
+                  
+  <div class="promo-block promo-block_freelansim-tasks">
+    <div class="promo-block__header">
+      <a href="http://freelansim.ru" target="_blank" data-utm="?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" class="promo-block__title-link">Заказы для фрилансеров</a>
+      <a href="http://freelansim.ru" target="_blank" data-utm="?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" class="promo-block__service icon_logo_freelansim"></a>
+    </div>
+
+    <div class="promo-block__content">
+      <ul class="content-list content-list_promo" >
+          <li class="content-list__item task ">
+            <div class="task__wrap">
+              <a href="http://freelansim.ru/tasks/157255" data-utm="?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" class="content-list__item-link task__title">Upgrade iOS application </a>
+              <div class="task__attrs attrs">
+                <span class="attrs__item">16.10.2016</span>
+                <span class="attrs__item">1 отклик</span>
+              </div>
+            </div>
+            <div class="task__aside">70000 руб./за проект</div>
+          </li>
+          <li class="content-list__item task ">
+            <div class="task__wrap">
+              <a href="http://freelansim.ru/tasks/157247" data-utm="?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" class="content-list__item-link task__title">Адаптация и настройка под современные требования joomla virtuemart 3</a>
+              <div class="task__attrs attrs">
+                <span class="attrs__item">16.10.2016</span>
+                <span class="attrs__item">1 отклик</span>
+              </div>
+            </div>
+            <div class="task__aside">10000 руб./за проект</div>
+          </li>
+          <li class="content-list__item task ">
+            <div class="task__wrap">
+              <a href="http://freelansim.ru/tasks/157245" data-utm="?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" class="content-list__item-link task__title">Сайт на WordPress</a>
+              <div class="task__attrs attrs">
+                <span class="attrs__item">16.10.2016</span>
+                <span class="attrs__item">3 отклика</span>
+              </div>
+            </div>
+            <div class="task__aside">Цена договорная</div>
+          </li>
+      </ul>
+    </div>
+
+    <div class="promo-block__footer">
+      <div class="promo-block__footer_left">
+        <a href="http://freelansim.ru" class="promo-block__see-all" data-utm="?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" target="_blank">Смотреть все заказы&nbsp;&rarr;</a>
+      </div>
+      <div class="promo-block__footer_right">
+        <a href="http://freelansim.ru/" data-utm="?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" class="promo-block__footer-link" target="_blank">Зарегистрироваться</a>
+
+        <a href="http://freelansim.ru/?utm_source=tm_habrahabr&utm_medium=tm_block&utm_campaign=tm_promo" class="promo-block__footer-link" target="_blank">Разместить заказ</a>
+        <script type="text/javascript" src="/viewcount/custom/2/"></script>
+      </div>
+
+    </div>
+  </div>
+
+
+              </div>
+
+            
+    <div class="post post_teaser shortcuts_item" id="post_312738">
+  <div class="post__header">
+      <span class="post__time_published">вчера в 15:00</span>
+
+    <h2 class="post__title">
+      
+      <a href="https://habrahabr.ru/post/312738/" class="post__title_link">Сколько места в куче занимают 100 миллионов строк в Java?</a>
+      
+
+
+
+
+
+
+
+
+    </h2>
+
+      <div class="hubs">
+          <a href="https://habrahabr.ru/hub/programming/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'Программирование'); }">Программирование</a><span class="profiled_hub" title="Профильный хаб">*</span>, 
+          <a href="https://habrahabr.ru/hub/java/" class="hub " title="Вы не подписаны на этот хаб" onclick="if (typeof ga === 'function') { ga('send', 'event', 'hub', 'feed page', 'JAVA'); }">JAVA</a><span class="profiled_hub" title="Профильный хаб">*</span>
+      </div>
+  </div>
+
+  <div class="post__body post__body_crop ">
+    <div class="content html_format">При работе с естественным языком и лингвистическом анализе текстов нам часто приходится оперировать огромным количеством уникальных коротких строк. Счёт идёт на десятки и сотни миллионов — именно столько в языке существует, к примеру, осмысленных сочетаний из двух слов. Основной платформой для нас является Java и мы не понаслышке знаем о её прожорливости при работе с таким большим количеством мелких объектов.<br/>
+<br/>
+Чтобы оценить масштаб бедствия, мы решили провести простой эксперимент — создать 100 миллионов пустых строк в Яве и посмотреть, сколько придётся заплатить за них оперативной памяти.</div>
+      <div class="buttons" style="padding: 20px 0 0;">
+        <a class="button" href="https://habrahabr.ru/post/312738/#habracut">Читать дальше &rarr;</a>
+      </div>
+    
+  </div>
+
+  <div class="post__footer">
+      <div class="infopanel_wrapper js-user_">
+    <ul class="postinfo-panel " id="infopanel_post_312738">
+
+          <li class="postinfo-panel__item">
+            <div class="voting-wjt voting-wjt_infopanel js-voting  ">
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_plus js-plus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&uarr;</span>
+                </button>
+
+              <div class="voting-wjt__counter js-mark">
+                    <span class="voting-wjt__result-score js-score" title="Результат голосования виден только авторизованным пользователям">&mdash;</span>
+              </div>
+
+                <button type="button" disabled class="voting-wjt__button voting-wjt__button_minus js-minus" title="Голосовать могут только зарегистрированные пользователи.">
+                  <span>&darr;</span>
+                </button>
+
+            </div>
+          </li>
+
+      <li class="postinfo-panel__item">
+        <div class="views-count_post" title="Просмотры публикации">14,7k</div>
+      </li>
+
+      <li class="postinfo-panel__item">
+        <div class="favorite-wjt favorite">
+            <button type="button" disabled class="favorite-wjt__button favorite-wjt__button_disabled" onclick="return false;" title="Только зарегистрированные пользователи могут добавлять публикации в избранное">
+              <span>Добавить в избранное</span>
+            </button>
+          <span class="favorite-wjt__counter js-favs_count" title="Количество пользователей, добавивших публикацию в избранное">40</span>
+        </div>
+      </li>
+
+              <li class="postinfo-panel__item post-author">
+                <a title="Автор публикации" class="post-author__link" href="https://habrahabr.ru/users/kdenisk/" >
+                    <span class="post-author__pic_default user-pic_pink"></span>@kdenisk
+                </a>
+              </li>
+
+
+            <li class="postinfo-panel__item postinfo-panel__item_comments">
+              <div class="post-comments">
+                  <a href="https://habrahabr.ru/post/312738/#comments" class="post-comments__link post-comments__link_all" title="Читать комментарии">71</a>
+
+
+              </div>
+            </li>
+
+      <li class="postinfo-panel__item postinfo-panel__item_align-right">
+
+      </li>
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+        </div>
+
+        <div class="page-nav">
+
+	<ul class="next-prev">
+			<li><span>&larr;</span>&nbsp;сюда</li>
+
+			<li><a title="На страницу вперед (Alt + &rarr;)" class="next" id="next_page" href="/flows/develop/page2/" rel="">туда</a>&nbsp;<span>&rarr;</span></li>
+	</ul>
+
+	<ul id="nav-pages">
+				<li><em>1</em></li>
+
+
+				<li><a href="/flows/develop/page2/">2</a></li>
+
+				<li><a href="/flows/develop/page3/">3</a></li>
+
+				<li><a href="/flows/develop/page4/">4</a></li>
+
+				<li><a href="/flows/develop/page5/">5</a></li>
+
+				<li><a href="/flows/develop/page6/">6</a></li>
+
+				<li><a href="/flows/develop/page7/">7</a></li>
+
+				<li><a href="/flows/develop/page8/">8</a></li>
+			<li><a title="Последняя страница" href="/flows/develop/page100/" rel=""><span>&rarr;</span></a></li>
+	</ul>
+</div>
+
+
+        <form action="/json/favorites/" method="post" id="edit_tags_form" class="hidden">
+  <input type="hidden" name="action" value="add" />
+  <input type="hidden" name="ti" value="0" />
+  <input type="hidden" name="tt" value="0" />
+  <label>Пометьте топик понятными вам метками, если хотите</label>
+  <input type="text" name="tags_string" class="tags_string" />
+  <div class="description">Метки лучше разделять запятой. Например: <i>общение, социальные сети, myspace.com, подростки, мердок</i></div>
+  <div class="buttons">
+  	<input type="submit" value="Сохранить" class="submit" /> или <a href="#" class="close" onclick="return close_edit_tags()">закрыть</a>
+ 	</div>
+</form>
+
+      </div>
+    </div>
+
+    <div class="sidebar_right js-sidebar_right">
+          <div class="xyz_wrapper is_visible">
+    <div class="xyz_wrapper_inner" id="xyz_wrapper" style="width:100%;min-height: 250px;">
+      <span class="xyz_wrapper_text" id="xyz_text">Реклама помогает поддерживать и&nbsp;развивать наши сервисы<br/><br/><a href="/adblock/" class="xyz_wrapper_button" target="_blank">Подробнее</a></span>
+      <!--  AdRiver code START. Type:AjaxJS Site: habrahabr BN:1 -->
+      <div id="adriver_banner_1096808718" style="background:#fff;width: 100%;text-align:center;"></div>
+      <script type="text/javascript">
+        var keyword = '';
+        var custom = [];
+        custom[7] = ar_duo1;
+
+        if (typeof crtg_content !== 'undefined' && crtg_content) { keyword = crtg_content; }
+         custom[1] = 'f_develop'; 
+
+        if ( typeof(adriver) !== 'undefined'){
+          hidePlaceholder();
+          new adriver("adriver_banner_1096808718", {sid:176776, bt:52, bn:1, custom: custom, keyword: keyword});
+        }
+
+        function hidePlaceholder(){
+          document.getElementById('xyz_wrapper').style.background = "white";
+          document.getElementById('xyz_text').style.display = "none";
+        }
+      </script>
+      <!--  AdRiver code END  -->
+    </div>
+    <a href="https://special.habrahabr.ru/advertising/" class="firskill__label">Реклама</a>
+  </div>
+
+        
+
+  <div class="sidebar-block sidebar-block_top-hubs js-tophubs">
+    <h2 class="sidebar-block__title">Хабы</h2>
+    <div class="sidebar-block__content">
+      <ul class="content-list top-hubs">
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/javascript/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'JavaScript'); }">JavaScript</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/ios_dev/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Разработка под iOS'); }">Разработка под iOS</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/rust/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Rust'); }">Rust</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/ror/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Ruby on Rails'); }">Ruby on Rails</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/webdev/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Разработка веб-сайтов'); }">Разработка веб-сайтов</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/programming/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Программирование'); }">Программирование</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/xcode/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Xcode'); }">Xcode</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/mobile_dev/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Разработка мобильных приложений'); }">Разработка мобильных приложений</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/ruby/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Ruby'); }">Ruby</a>
+          </li>
+          <li class="content-list__item top-hubs__item">
+            <a href="https://habrahabr.ru/hub/android_dev/" class="content-list__item-link top-hubs__item-title" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'Разработка под Android'); }">Разработка под Android</a>
+          </li>
+      </ul>
+    </div>
+    <div class="sidebar-block__footer">
+      <a href="/flows/develop/hubs/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'hubs', 'all_hubs'); }">Все хабы</a>
+    </div>
+  </div>
+
+        
+
+  <div class="sidebar-block sidebar-block_top-hubs js-tophubs">
+    <h2 class="sidebar-block__title">Авторы</h2>
+    <div class="sidebar-block__content">
+      <table class="top-users top-user_rating">
+        <tr>
+         <th class="king"></th>
+         <th class="rating">Вклад</th>
+        </tr>
+
+          <tr class="user top_1">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/ilya42/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/31c/aa0/1b7/31caa01b73a7aead8da158f607d00904.jpg" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:100%;"></div><a href="https://habrahabr.ru/users/ilya42/" class="grey">ilya42</a></div>
+            </td>
+            <td class="h_rating">12087,0</td>
+          </tr>
+          <tr class="user top_2">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/XaocCPS/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/6a0/c9d/bab/6a0c9dbabacebb48f9984fdc854c9dd4.jpg" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:81%;"></div><a href="https://habrahabr.ru/users/XaocCPS/" class="grey">XaocCPS</a></div>
+            </td>
+            <td class="h_rating">9846,6</td>
+          </tr>
+          <tr class="user top_3">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/tangro/" class="avatar">
+                  <span class="user-pic_default user-pic_default_24 user-pic_lilac"></span>
+              </a>
+
+              <div class="username"><div class="bar" style="width:65%;"></div><a href="https://habrahabr.ru/users/tangro/" class="grey">tangro</a></div>
+            </td>
+            <td class="h_rating">7821,8</td>
+          </tr>
+          <tr class="user top_4">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/alexzfort/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/d2a/e8a/5ac/d2ae8a5ac9876f838ebdd45f3ea3bc3b.png" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:60%;"></div><a href="https://habrahabr.ru/users/alexzfort/" class="grey">alexzfort</a></div>
+            </td>
+            <td class="h_rating">7238,0</td>
+          </tr>
+          <tr class="user top_5">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/Mithgol/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/45b/a39/080/45ba3908025464c61b3ad3ebcf6aa351.png" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:59%;"></div><a href="https://habrahabr.ru/users/Mithgol/" class="grey">Mithgol</a></div>
+            </td>
+            <td class="h_rating">7092,6</td>
+          </tr>
+          <tr class="user top_6">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/ValdikSS/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/508/a39/846/508a398460481dc2e5bf44d198e0ee90.png" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:53%;"></div><a href="https://habrahabr.ru/users/ValdikSS/" class="grey">ValdikSS</a></div>
+            </td>
+            <td class="h_rating">6390,2</td>
+          </tr>
+          <tr class="user top_7">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/ptsecurity/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/3a8/d9d/bf9/3a8d9dbf9d3a63e86a3318cfcb90d34f.jpg" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:49%;"></div><a href="https://habrahabr.ru/users/ptsecurity/" class="grey">ptsecurity</a></div>
+            </td>
+            <td class="h_rating">5876,8</td>
+          </tr>
+          <tr class="user top_8">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/Jeditobe/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/e4d/f97/9a8/e4df979a8b9e081af1488dc34cab05cf.jpg" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:45%;"></div><a href="https://habrahabr.ru/users/Jeditobe/" class="grey">Jeditobe</a></div>
+            </td>
+            <td class="h_rating">5442,2</td>
+          </tr>
+          <tr class="user top_9">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/aleksandrit/" class="avatar">
+                  <img src="//habrastorage.org/getpro/habr/avatars/a4e/a5e/7c8/a4ea5e7c8913c5d935368c799b758798.jpg" />
+              </a>
+
+              <div class="username"><div class="bar" style="width:43%;"></div><a href="https://habrahabr.ru/users/aleksandrit/" class="grey">aleksandrit</a></div>
+            </td>
+            <td class="h_rating">5217,2</td>
+          </tr>
+          <tr class="user top_10">
+            <td class="userinfo">
+              <a href="https://habrahabr.ru/users/grokru/" class="avatar">
+                  <span class="user-pic_default user-pic_default_24 user-pic_lilac"></span>
+              </a>
+
+              <div class="username"><div class="bar" style="width:39%;"></div><a href="https://habrahabr.ru/users/grokru/" class="grey">grokru</a></div>
+            </td>
+            <td class="h_rating">4684,0</td>
+          </tr>
+      </table>
+    </div>
+    <div class="sidebar-block__footer">
+      <a href="/flows/develop/authors/">Все лидеры</a>
+    </div>
+  </div>
+
+          <div class="js-ad_sticky"><div class="xyz_wrapper">
+  <div class="xyz_wrapper_inner">
+    <span class="xyz_wrapper_text">Реклама помогает поддерживать и&nbsp;развивать наши сервисы<br/><br/><a href="/adblock/" class="xyz_wrapper_button" target="_blank">Подробнее</a></span>
+
+    <!-- Яндекс.Директ -->
+    <div id="yandex_ad" style="background: #fff;"></div>
+    <script type="text/javascript">
+      (function(w, d, n, s, t) {
+          w[n] = w[n] || [];
+          w[n].push(function() {
+              Ya.Direct.insertInto(149298, "yandex_ad", {
+                  stat_id: 8,
+                  ad_format: "direct",
+                  font_family: "verdana",
+                  type: "posterVertical",
+                  border_type: "block",
+                  limit: 2,
+                  title_font_size: 3,
+                  border_radius: true,
+                  links_underline: false,
+                  site_bg_color: "FFFFFF",
+                  border_color: "FBE5C0",
+                  title_color: "0066CC",
+                  url_color: "006600",
+                  text_color: "000000",
+                  hover_color: "0066FF",
+                  sitelinks_color: "0066CC",
+                  favicon: true,
+                  no_sitelinks: false
+              });
+          });
+          t = d.getElementsByTagName("script")[0];
+          s = d.createElement("script");
+          s.src = "//an.yandex.ru/system/context.js";
+          s.type = "text/javascript";
+          s.async = true;
+          t.parentNode.insertBefore(s, t);
+      })(window, document, "yandex_context_callbacks");
+    </script>
+
+
+  </div>
+  <a href="https://special.habrahabr.ru/advertising/" class="firskill__label">Реклама</a>
+</div>
+</div>
+    </div>
+  </div>
+
+  <div class="column-wrapper column-wrapper_bottom column-wrapper_bordered">
+    <div class="content_left">
+      
+
+  <div class="similar-posts similar-posts_full">
+    <h2 class="similar-posts__title_wrap">
+      <span class="similar-posts__title">Самое читаемое</span>
+        <span class="similar-posts__flow">
+          <a href="" class="similar-posts__flow-link">Разработка</a>
+        </span>
+    </h2>
+    <div class="live-broadcast__tabs tabs" id="broadcast_tabs_posts">
+
+      <ul class="tabs__menu tabs__menu_posts menu menu_inline">
+        <li class="menu__item"><a href="#broadcast_posts_now" class="menu__item-tab">Сейчас</a></li>
+        <li class="menu__item"><a href="#broadcast_posts_today" class="menu__item-tab">Сутки</a></li>
+        <li class="menu__item"><a href="#broadcast_posts_week" class="menu__item-tab">Неделя</a></li>
+        <li class="menu__item"><a href="#broadcast_posts_month" class="menu__item-tab">Месяц</a></li>
+      </ul>
+
+        <div class="tabs__content tabs__content_reading" id="broadcast_posts_now">
+            <ul class="content-list content-list_posts content-list_most-reading">
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+26</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/company/edison/blog/312750/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Дональд Кнут и «Сюрреальные числа»: Я творил шесть дней, а на седьмой отдыхал (40,41,42/97)</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">4,7k</span>
+                        <span class="inline-list__item favorites-count">35</span>
+                        <span class="inline-list__item comments-count">1</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+29</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312756/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Кремлевские девойки</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">11,1k</span>
+                        <span class="inline-list__item favorites-count">23</span>
+                        <span class="inline-list__item comments-count">13</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+25</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312774/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Зачем нужен алгоритм Хо-Кашьяпа?</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">3,7k</span>
+                        <span class="inline-list__item favorites-count">51</span>
+                        <span class="inline-list__item comments-count">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+6</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312734/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Ядро Linux, спрятанное внутри Windows 10</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">18,2k</span>
+                        <span class="inline-list__item favorites-count">60</span>
+                        <span class="inline-list__item comments-count">67</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+12</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312722/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Почему я больше не нажимаю кнопку «Add contact» в Telegram</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">19,7k</span>
+                        <span class="inline-list__item favorites-count">24</span>
+                        <span class="inline-list__item comments-count">70</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tabs__content tabs__content_reading" id="broadcast_posts_today">
+            <ul class="content-list content-list_posts content-list_most-reading">
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+6</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312734/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Ядро Linux, спрятанное внутри Windows 10</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">18,2k</span>
+                        <span class="inline-list__item favorites-count">60</span>
+                        <span class="inline-list__item comments-count">67</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+29</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312756/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Кремлевские девойки</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">11,1k</span>
+                        <span class="inline-list__item favorites-count">23</span>
+                        <span class="inline-list__item comments-count">13</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+12</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312722/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Почему я больше не нажимаю кнопку «Add contact» в Telegram</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">19,7k</span>
+                        <span class="inline-list__item favorites-count">24</span>
+                        <span class="inline-list__item comments-count">70</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+14</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312738/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Сколько места в куче занимают 100 миллионов строк в Java?</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">14,7k</span>
+                        <span class="inline-list__item favorites-count">40</span>
+                        <span class="inline-list__item comments-count">71</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+29</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312740/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Логика сознания. Часть 8. Пространственные карты коры мозга</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">5,3k</span>
+                        <span class="inline-list__item favorites-count">75</span>
+                        <span class="inline-list__item comments-count">7</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tabs__content tabs__content_reading" id="broadcast_posts_week">
+            <ul class="content-list content-list_posts content-list_most-reading">
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+105</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312636/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Любой сайт может получить информацию о том, в каких популярных сервисах вы авторизированы</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">32,8k</span>
+                        <span class="inline-list__item favorites-count">289</span>
+                        <span class="inline-list__item comments-count">89</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+67</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312080/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Почему я как разработчик ненавижу iOS</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">31,1k</span>
+                        <span class="inline-list__item favorites-count">68</span>
+                        <span class="inline-list__item comments-count">416</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+50</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312450/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Нейронные сети для начинающих. Часть 1</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">27,2k</span>
+                        <span class="inline-list__item favorites-count">708</span>
+                        <span class="inline-list__item comments-count">58</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+12</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312722/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Почему я больше не нажимаю кнопку «Add contact» в Telegram</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">19,7k</span>
+                        <span class="inline-list__item favorites-count">24</span>
+                        <span class="inline-list__item comments-count">70</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+54</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/company/kaspersky/blog/312234/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Криптономикон: великий баян, привет из 90-х и лучшая книга о технарях</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">19,1k</span>
+                        <span class="inline-list__item favorites-count">204</span>
+                        <span class="inline-list__item comments-count">50</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tabs__content tabs__content_reading" id="broadcast_posts_month">
+            <ul class="content-list content-list_posts content-list_most-reading">
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+216</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/312022/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Каково оно учить JavaScript в 2016</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">98,8k</span>
+                        <span class="inline-list__item favorites-count">603</span>
+                        <span class="inline-list__item comments-count">263</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+57</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/310252/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Пять перспективных языков программирования со светлым будущим</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">61,2k</span>
+                        <span class="inline-list__item favorites-count">281</span>
+                        <span class="inline-list__item comments-count">146</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+123</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/310460/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Полное практическое руководство по Docker: с нуля до кластера на AWS</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">54,2k</span>
+                        <span class="inline-list__item favorites-count">1252</span>
+                        <span class="inline-list__item comments-count">35</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+83</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/310794/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">Структуры данных для самых маленьких</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">50,5k</span>
+                        <span class="inline-list__item favorites-count">767</span>
+                        <span class="inline-list__item comments-count">51</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="content-list__item">
+                  <div class="post-preview">
+                    <div class="post-preview__rating">+76</div>
+                    <div class="post-preview__desc">
+                      <a href="https://habrahabr.ru/post/310576/" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'live_broadcast_activity', 'post'); }" class="post-preview__link">ФСБ планирует дешифровать весь интернет-трафик россиян в режиме реального времени</a>
+                      <span class="post-preview__attrs inline-list inline-list_attrs">
+                        <span class="inline-list__item views-count">48,9k</span>
+                        <span class="inline-list__item favorites-count">77</span>
+                        <span class="inline-list__item comments-count">572</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+
+
+
+      
+
+  <div class="live-broadcast live-broadcast_feed">
+    <h2 class="live-broadcast__title live-broadcast__title_feed">Интересные публикации</h2>
+
+    <div class="dropdown dropdown_broadcast">
+      <button type="button" class="btn btn_outline_grey btn_large icon_cog dropdown-toggle" data-toggle="dropdown">
+      </button>
+      <div class="dropdown-container">
+        <ul class="n-dropdown-menu n-dropdown-menu_feed" id="filter">
+          <li class="n-dropdown-menu__item">
+            <label class="checkbox checkbox_custom">
+              <input type="checkbox" class="checkbox__input" name="habrahabr" checked/>
+              <span class="checkbox__label">Хабрахабр</span>
+            </label>
+          </li>
+          <li class="n-dropdown-menu__item">
+            <label class="checkbox checkbox_custom">
+              <input type="checkbox" class="checkbox__input" name="geektimes" checked/>
+              <span class="checkbox__label">Гиктаймс</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="live-broadcast__content">
+      <ul class="content-list content-list_feed" id="list" data-posts-count="5">
+          <li class="content-list__item content-list__item_habrahabr hidden" data-type="habrahabr">
+            <a href="https://habrahabr.ru/post/312710/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">Netstat, где мои дейтаграммы?</a>&nbsp;&nbsp;<a href="https://habrahabr.ru/post/312710/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">1</a>
+          </li>
+          <li class="content-list__item content-list__item_geektimes hidden" data-type="geektimes">
+            <a href="https://geektimes.ru/post/281530/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">Изготовление шокмаунта для микрофона Yeti</a>&nbsp;&nbsp;<a href="https://geektimes.ru/post/281530/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">11</a>
+          </li>
+          <li class="content-list__item content-list__item_habrahabr hidden" data-type="habrahabr">
+            <a href="https://habrahabr.ru/post/312746/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">RailsClub 2016: интервью со Steve Klabnik</a>&nbsp;&nbsp;<a href="https://habrahabr.ru/post/312746/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">0</a>
+          </li>
+          <li class="content-list__item content-list__item_geektimes hidden" data-type="geektimes">
+            <a href="https://geektimes.ru/post/273476/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">История гаджетов Motorola</a>&nbsp;&nbsp;<a href="https://geektimes.ru/post/273476/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">8</a>
+          </li>
+          <li class="content-list__item content-list__item_geektimes hidden" data-type="geektimes">
+            <a href="https://geektimes.ru/post/281526/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">Умный сетевой WI-FI-удлинитель с функцией таймера, управляемый через интернет из любой точки земного шара</a>&nbsp;&nbsp;<a href="https://geektimes.ru/post/281526/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">24</a>
+          </li>
+          <li class="content-list__item content-list__item_habrahabr hidden" data-type="habrahabr">
+            <a href="https://habrahabr.ru/post/312774/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">Зачем нужен алгоритм Хо-Кашьяпа?</a>&nbsp;&nbsp;<a href="https://habrahabr.ru/post/312774/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">0</a>
+          </li>
+          <li class="content-list__item content-list__item_geektimes hidden" data-type="geektimes">
+            <a href="https://geektimes.ru/post/281514/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">ExoMars выходит на орбиту Марса, Schiaparelli готовится к посадке</a>&nbsp;&nbsp;<a href="https://geektimes.ru/post/281514/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">9</a>
+          </li>
+          <li class="content-list__item content-list__item_habrahabr hidden" data-type="habrahabr">
+            <a href="https://habrahabr.ru/post/312750/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">Дональд Кнут и «Сюрреальные числа»: Я творил шесть дней, а на седьмой отдыхал (40,41,42/97)</a>&nbsp;&nbsp;<a href="https://habrahabr.ru/post/312750/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">1</a>
+          </li>
+          <li class="content-list__item content-list__item_habrahabr hidden" data-type="habrahabr">
+            <a href="https://habrahabr.ru/post/312756/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">Кремлевские девойки</a>&nbsp;&nbsp;<a href="https://habrahabr.ru/post/312756/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">13</a>
+          </li>
+          <li class="content-list__item content-list__item_geektimes hidden" data-type="geektimes">
+            <a href="https://geektimes.ru/post/281524/" class="content-list__item-link" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'post'); }" data-utm="?utm_source=tm_megamozg&utm_medium=tm_block&utm_campaign=tm_promo">Физика в мире животных: морские черепахи и их «компас»</a>&nbsp;&nbsp;<a href="https://geektimes.ru/post/281524/#comments" onclick="if (typeof ga === 'function') { ga('send', 'event', 'tm_block', 'interesting_posts', 'comment'); }" class="content-list__item-counter icon_comments">3</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="sidebar_right">
+        <div class="xyz_wrapper js-ad_sticky_bottom">
+  <div class="xyz_wrapper_inner">
+    <span class="xyz_wrapper_text">Реклама помогает поддерживать и&nbsp;развивать наши сервисы<br/><br/><a href="/adblock/" class="xyz_wrapper_button" target="_blank">Подробнее</a></span>
+
+    <!-- Яндекс.Директ -->
+    <div id="yandex_ad_bottom" style="background: #fff;"></div>
+    <script type="text/javascript">
+      (function(w, d, n, s, t) {
+          w[n] = w[n] || [];
+          w[n].push(function() {
+              Ya.Direct.insertInto(149298, "yandex_ad_bottom", {
+                  stat_id: 5,
+                  ad_format: "direct",
+                  font_family: "verdana",
+                  type: "posterVertical",
+                  border_type: "block",
+                  limit: 2,
+                  title_font_size: 3,
+                  border_radius: true,
+                  links_underline: false,
+                  site_bg_color: "FFFFFF",
+                  border_color: "FBE5C0",
+                  title_color: "0066CC",
+                  url_color: "006600",
+                  text_color: "000000",
+                  hover_color: "0066FF",
+                  sitelinks_color: "0066CC",
+                  favicon: true,
+                  no_sitelinks: false
+              });
+          });
+          t = d.getElementsByTagName("script")[0];
+          s = d.createElement("script");
+          s.src = "//an.yandex.ru/system/context.js";
+          s.type = "text/javascript";
+          s.async = true;
+          t.parentNode.insertBefore(s, t);
+      })(window, document, "yandex_context_callbacks");
+    </script>
+
+  </div>
+  <a href="https://special.habrahabr.ru/advertising/" class="firskill__label">Реклама</a>
+</div>
+
+    </div>
+  </div>
+
+
+      </div>
+      <div class="layout__footer">
+        <div class="footer_panel">
+  <div id="footer">
+    <dl>
+      <dd><a href="https://habrahabr.ru/auth/login/">Войти</a></dd>
+      <dd><a href="https://habrahabr.ru/auth/register/">Регистрация</a></dd>
+    </dl>
+    <dl>
+      <dt>Разделы</dt>
+      <dd><a href="https://habrahabr.ru/posts/top/">Публикации</a></dd>
+      <dd><a href="https://habrahabr.ru/hubs/">Хабы</a></dd>
+      <dd><a href="https://habrahabr.ru/companies/">Компании</a></dd>
+      <dd><a href="https://habrahabr.ru/users/">Пользователи</a></dd>
+      <dd><a href="https://toster.ru/?_aa=press_anykey">Q&amp;A</a></dd>
+      <dd><a href="https://habrahabr.ru/sandbox/">Песочница</a></dd>
+
+    </dl>
+    <dl>
+      <dt>Инфо</dt>
+      <dd><a href="/info/about/">О сайте</a></dd>
+      <dd><a href="/info/help/rules/">Правила</a></dd>
+      <dd><a href="/info/help/">Помощь</a></dd>
+      <dd><a href="/info/agreement/">Соглашение</a></dd>
+    </dl>
+    <dl>
+      <dt>Услуги</dt>
+      <dd><a href="https://special.habrahabr.ru/advertising/">Реклама</a></dd>
+        <dd><a href="https://special.habrahabr.ru/">Спецпроекты</a></dd>
+        <dd><a href="https://special.habrahabr.ru/corporate/">Тарифы</a></dd>
+        <dd><a href="https://special.habrahabr.ru/content/">Контент</a></dd>
+        <dd><a href="https://special.habrahabr.ru/workshops/">Семинары</a></dd>
+    </dl>
+
+    <dl>
+      <dt>Разное</dt>
+      <dd><a href="/apps/">Приложения</a></dd>
+      <dd><a href="https://special.habrahabr.ru/google/lab/" target="_blank">Тест-драйв</a></dd>
+      <dd><a href="https://special.habrahabr.ru/hello_startup/habrahabr/" target="_blank">Помощь стартапам</a></dd>
+        <dd><a href="https://special.habrahabr.ru/#hr">Работа в IT</a></dd>
+    </dl>
+    <div class="copyright">
+
+      <div class="about">
+        <a href="https://tmtm.ru/">© TM</a>
+
+        <br><br>
+        <a href="https://habrahabr.ru/feedback/">Служба поддержки</a><br><br>
+            <a href="https://m.habrahabr.ru?mobile=yes">Мобильная версия</a><br><br>
+
+
+        <div class="social_accounts">
+          <a href="https://twitter.com/habrahabr" class="tw"></a>
+          <a href="https://www.facebook.com/habrahabr.ru" class="fb"></a>
+          <a href="https://vk.com/habr" class="vk"></a>
+          <!-- <a href="" class="gp"></a> //-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <a href="#" class="layout__elevator hidden" id="scroll_to_top" title="Наверх"  onclick="if (typeof ga === 'function') { ga('send', 'event', 'navigation_button', 'up', 'https://habrahabr.ru/flows/develop/'); }">
+        <svg class="icon-svg icon-svg_scroll-up" width="100%" height="100%" viewBox="0 0 32 32" aria-hidden="true" aria-labelledby="title" version="1.1" role="img"><title>arrow up</title><path d="M16 0C7.164 0 0 7.164 0 16s7.164 16 16 16 16-7.164 16-16S24.836 0 16 0zm8.412 19.523c-.517.512-1.355.512-1.872 0L16 13.516l-6.54 6.01c-.518.51-1.356.51-1.873 0-.516-.513-.517-1.343 0-1.855l7.476-7.326c.517-.512 1.356-.512 1.873 0l7.476 7.327c.516.513.516 1.342 0 1.854z"/></svg>
+      </a>
+    </div>
+
+    <script type="text/javascript">
+  // global vars
+  var g_base_url = 'habrahabr.ru';
+  var g_show_xpanel = false;
+  var g_base_fullurl = 'https://habrahabr.ru/';
+  var g_is_guest = false;
+
+</script>
+    <script src="https://habracdn.net/habr/javascripts/1476358189/app.vendors.js"></script>
+    <script src="https://habracdn.net/habr/javascripts/1476358189/app.main.js"></script>
+    <script src="https://habracdn.net/habr/javascripts/1476358189/libs/flexibility.js"></script>
+    
+      <script type="text/javascript">
+        $(document).ready( function(){
+          window.tmidLogin = function(){ return false; };
+          if( $.cookie('tmid_no_check') == undefined ) {
+            var expire = new Date();
+            expire.setMinutes(expire.getMinutes() + 10 );
+            $.cookie('tmid_no_check', 1, { expires: expire } );
+            $.getScript("https://id.tmtm.ru/checklogin/", function(){
+              if( window.tmidLogin() ) {
+                var href = $('#login').attr('href')+'?checklogin=true';
+                if( href !== undefined ) { window.location.href = href; }
+              }
+            });
+          }
+        });
+      </script>
+
+    
+    
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            if (typeof (_yaparams) != 'undefined') {
+                w.yaCounter24049213 = new Ya.Metrika({id:24049213,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    params:_yaparams});
+            } else {
+                w.yaCounter24049213 = new Ya.Metrika({id:24049213,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+            }
+
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24049213" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    
+    
+  </body>
+</html>
